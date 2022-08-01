@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    }
+
+
+
+body {   background: rgb(195,217,148);
+background: linear-gradient(180deg, rgba(195,217,148,1) 7%, rgba(220,230,201,1) 71%);
+}
+
+nav {
+  background-color: #5b800; 
+}
+
+.hero {
+    width: 100%;
+    height: 30vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.534)), url(banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    
+    color: antiquewhite;
+    
+}
+
+.hero h2 {
+    font-weight: 1500;
+    font-size: 50;
+    
+    padding: 10;
+    text-align: left;
+    border: 2;
+    margin: 10;
+    width: 80;
+    
+}
+
+
+.hero .subparrafo {
+    margin: 10;
+    border: 2;
+}
+
+.hero p {
+    margin: 10;
+    border: 2;
+   
+    padding: 10;
+}
+
+
+
+.hero .subtitulo span {
+    color: black;
+}
+
+.carouselExampleSlidesOnly {
+    width: 350px;
+    height: 300px;
+    align-items: center;
+}
+
+.cambio {
+    width: 50px;
+    height: 50px;
+
+}
+
+h1 {
+    padding: 10px;
+}
+
+.lot {
+    width: 150px;
+}
+
+.uno {
+    padding: 10px;
+}
+
+.dos {
+    padding: 10px;
+}
+
+
+.adopt {
+    padding: 10px;
+}
+
+
+.info {
+    
+    margin: 20px;
+    border: 20px;
+    text-align: center;
+    
+   
+}
+
+.container {
+    background-color: rgb(165, 81, 42);
+}
+
+.navbar-brand {
+    padding: 5px;
+}
+
+footer {
+    
+    padding: 10px;
+    background-color: gray;
+}
+
+
+div a img {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+}
+
+.carouselExampleControlsNoTouching {
+    position: relative;
+    left: 250px;
+}
+
+.save {
+    padding: 10px;
+}
+/*Galeria*/
+
+.galeria {
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 15px;
+}
+
+.galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 19px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 19px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 19px -1px rgba(0, 0, 0, 0.75);
+}
+
+.img-0 {
+    grid-column-start: span 2;
+}
+/* Media query para ajustar la fuente, tamaño 1024px = tableta en horizontal para abajo */
+@media screen and (max-width:1024px){
+    .hero .subtitulo  {
+        font-weight: 1500;
+        font-size: 50px;
+        line-height: none;
+        padding: 20px;
+        text-align: left;
+        border: 2px solid white;
+        margin: 20px;
+    }
+    
+    
+    .hero .parrafo {
+        margin: 5px;
+        border: 2px;
+    }
+
+    .hero {
+        /* Le doy mas alto para tener mas espacio y que entre el texto*/
+        min-height: 40vw;
+        
+    }
+    
+}
+
+/* TAMAÑO TABLET */
+@media screen and (max-width:767px) {
+    .hero .subtitulo  {
+        font-weight: 1500;
+        font-size: 30px;
+        line-height: none;
+        padding: 20px;
+        text-align: left;
+        border: 2px solid white;
+        margin: 20px;
+    }
+    
+
+    .hero {
+        /* Le doy mas alto para tener mas espacio y que entre el texto*/
+        min-height: 70vw;
+        
+    }
+}
